@@ -45,6 +45,15 @@ extension PlaceholderViewController: UITableViewDataSource {
 
         cell.loadingView.startAnimating()
         
+        switch (thisPH.albumId){
+        case 1:
+            cell.backgroundColor = UIColor.blue
+        case 2:
+            cell.backgroundColor = UIColor.purple
+        default:
+            cell.backgroundColor = UIColor.green
+        }
+        
         vm.downloadThumbnail(thisPH){ (imData) in
             if let imData = imData{
                 let image = UIImage(data: imData)

@@ -10,13 +10,15 @@ import UIKit
 
 class PlaceholderTableViewCell: UITableViewCell {
     
+    var color: CGColor?
+    
     @IBOutlet var thumbnailView: UIImageView!{
         didSet{
             let layer = thumbnailView.layer
             layer.cornerRadius = thumbnailView.frame.width / 10.0
             layer.masksToBounds = true
             layer.borderWidth = 2.0
-            layer.borderColor = UIColor.blue.cgColor
+            layer.borderColor = color
         }
     }
     
