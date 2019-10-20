@@ -20,6 +20,8 @@ class PlaceholderTableViewCell: UITableViewCell {
         }
     }
     
+    @IBOutlet var loadingView: UIActivityIndicatorView!
+    
     @IBOutlet var idLabel: UILabel!
     
     @IBOutlet var albumIdLabel: UILabel!

@@ -14,7 +14,6 @@ class PlaceholderViewController: UIViewController {
         }
     }
 
-    
     var vm = PlaceholderViewModel()
     
     override func viewDidLoad() {
@@ -41,6 +40,23 @@ extension PlaceholderViewController: UITableViewDataSource, UITableViewDelegate 
         cell.titleLabel.text = vm.placeholders[indexPath.row].title
         cell.idLabel.text = "\(vm.placeholders[indexPath.row].id)"
         cell.albumIdLabel.text = "\(vm.placeholders[indexPath.row].albumId)"
+        let thisPH = vm.placeholders[indexPath.row]
+
+        cell.loadingView.startAnimating()
+        
+        vm.downloadPicture(thisPH){ (imData) in
+            if let imData = imData{
+                let image = UIImage(data: imData)
+                DispatchQueue.main.async{
+                    cell.thumbnailView.image = image
+                }
+                cell.loadingView.stopAnimating()
+            }
+        }
+        
+        
+        
+
         
         return cell
     }
