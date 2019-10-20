@@ -32,6 +32,7 @@
 		021010EA235CED720011DEF3 /* PlaceholderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderTableViewCell.swift; sourceTree = "<group>"; };
 		021010EB235CED720011DEF3 /* PlaceholderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceholderTableViewCell.xib; sourceTree = "<group>"; };
 		021010EE235D04570011DEF3 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		021010F0235D1ABA0011DEF3 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +74,7 @@
 				021010CF235CC8E40011DEF3 /* Assets.xcassets */,
 				021010D1235CC8E40011DEF3 /* LaunchScreen.storyboard */,
 				021010D4235CC8E40011DEF3 /* Info.plist */,
+				021010F0235D1ABA0011DEF3 /* README.md */,
 			);
 			path = WA3;
 			sourceTree = "<group>";
