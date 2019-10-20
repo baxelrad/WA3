@@ -8,4 +8,5 @@
 - Random colors are generated at program run, and colors are assigned to albumId's.
 - Can click on a cell to see a the whole image (Imagescreen.png).
 - Can click back button to go back, or swipe up.
+- Version control on https://github.com/baxelrad/WA3.
 
