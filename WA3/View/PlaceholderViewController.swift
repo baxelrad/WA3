@@ -16,6 +16,8 @@ class PlaceholderViewController: UIViewController {
 
     var vm = PlaceholderViewModel()
     var imageName: String = ""
+    var colorArray = [UIColor]()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +29,18 @@ class PlaceholderViewController: UIViewController {
         vm.bind(updateUI)
         vm.download()
         //print(vm.placeholders)
+        
+        randomColor()
     }
+    
+    func randomColor(){
+        var colorArr = [UIColor]()
+        for _ in 0..<100{
+            colorArr.append(UIColor(displayP3Red: CGFloat(Float(arc4random()) / Float(UINT32_MAX)), green: CGFloat(Float(arc4random()) / Float(UINT32_MAX)), blue: CGFloat(Float(arc4random()) / Float(UINT32_MAX)), alpha: 1))
+        }
+        colorArray = colorArr
+    }
+    
 }
 
 extension PlaceholderViewController: UITableViewDataSource {
@@ -45,14 +58,8 @@ extension PlaceholderViewController: UITableViewDataSource {
 
         cell.loadingView.startAnimating()
         
-        switch (thisPH.albumId){
-        case 1:
-            cell.backgroundColor = UIColor.blue
-        case 2:
-            cell.backgroundColor = UIColor.purple
-        default:
-            cell.backgroundColor = UIColor.green
-        }
+
+        cell.backgroundColor = colorArray[thisPH.albumId]
         
         vm.downloadThumbnail(thisPH){ (imData) in
             if let imData = imData{
