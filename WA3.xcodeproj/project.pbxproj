@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		021010C9235CC8E30011DEF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021010C8235CC8E30011DEF3 /* AppDelegate.swift */; };
-		021010CB235CC8E30011DEF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021010CA235CC8E30011DEF3 /* ViewController.swift */; };
+		021010CB235CC8E30011DEF3 /* PlaceholderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021010CA235CC8E30011DEF3 /* PlaceholderViewController.swift */; };
 		021010CE235CC8E30011DEF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 021010CC235CC8E30011DEF3 /* Main.storyboard */; };
 		021010D0235CC8E40011DEF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 021010CF235CC8E40011DEF3 /* Assets.xcassets */; };
 		021010D3235CC8E40011DEF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 021010D1235CC8E40011DEF3 /* LaunchScreen.storyboard */; };
+		021010DE235CCBCC0011DEF3 /* PlaceholderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021010DD235CCBCC0011DEF3 /* PlaceholderViewModel.swift */; };
+		021010E0235CCBDD0011DEF3 /* PlaceholderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021010DF235CCBDD0011DEF3 /* PlaceholderModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		021010C5235CC8E30011DEF3 /* WA3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WA3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		021010C8235CC8E30011DEF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		021010CA235CC8E30011DEF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		021010CA235CC8E30011DEF3 /* PlaceholderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderViewController.swift; sourceTree = "<group>"; };
 		021010CD235CC8E30011DEF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		021010CF235CC8E40011DEF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		021010D2235CC8E40011DEF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		021010D4235CC8E40011DEF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		021010DD235CCBCC0011DEF3 /* PlaceholderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderViewModel.swift; sourceTree = "<group>"; };
+		021010DF235CCBDD0011DEF3 /* PlaceholderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,40 @@
 		021010C7235CC8E30011DEF3 /* WA3 */ = {
 			isa = PBXGroup;
 			children = (
+				021010DC235CCABC0011DEF3 /* Model */,
+				021010DB235CCAB40011DEF3 /* ViewModel */,
+				021010DA235CCAA80011DEF3 /* View */,
 				021010C8235CC8E30011DEF3 /* AppDelegate.swift */,
-				021010CA235CC8E30011DEF3 /* ViewController.swift */,
 				021010CC235CC8E30011DEF3 /* Main.storyboard */,
 				021010CF235CC8E40011DEF3 /* Assets.xcassets */,
 				021010D1235CC8E40011DEF3 /* LaunchScreen.storyboard */,
 				021010D4235CC8E40011DEF3 /* Info.plist */,
 			);
 			path = WA3;
+			sourceTree = "<group>";
+		};
+		021010DA235CCAA80011DEF3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				021010CA235CC8E30011DEF3 /* PlaceholderViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		021010DB235CCAB40011DEF3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				021010DD235CCBCC0011DEF3 /* PlaceholderViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		021010DC235CCABC0011DEF3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				021010DF235CCBDD0011DEF3 /* PlaceholderModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +165,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				021010CB235CC8E30011DEF3 /* ViewController.swift in Sources */,
+				021010CB235CC8E30011DEF3 /* PlaceholderViewController.swift in Sources */,
+				021010E0235CCBDD0011DEF3 /* PlaceholderModel.swift in Sources */,
 				021010C9235CC8E30011DEF3 /* AppDelegate.swift in Sources */,
+				021010DE235CCBCC0011DEF3 /* PlaceholderViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
