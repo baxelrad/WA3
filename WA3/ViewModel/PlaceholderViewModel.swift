@@ -40,8 +40,17 @@ class PlaceholderViewModel{
         }.resume()
     }
     
-    func downloadPicture(_ placeholder: Placeholder, _ completion: @escaping (Data?) -> Void) {
+    func downloadThumbnail(_ placeholder: Placeholder, _ completion: @escaping (Data?) -> Void) {
         let urlString = URL(string: placeholder.thumbnailUrl)
+        let dataTask = session.dataTask(with: urlString!) {(data, _, _) in
+            completion(data)
+        }
+        dataTask.resume()
+        
+    }
+    
+    func downloadPicture(_ placeholder: Placeholder, _ completion: @escaping (Data?) -> Void) {
+        let urlString = URL(string: placeholder.url)
         let dataTask = session.dataTask(with: urlString!) {(data, _, _) in
             completion(data)
         }

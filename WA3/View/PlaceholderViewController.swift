@@ -15,6 +15,7 @@ class PlaceholderViewController: UIViewController {
     }
 
     var vm = PlaceholderViewModel()
+    var imageName: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +30,7 @@ class PlaceholderViewController: UIViewController {
     }
 }
 
-extension PlaceholderViewController: UITableViewDataSource, UITableViewDelegate {
+extension PlaceholderViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return vm.count
     }
@@ -44,20 +45,33 @@ extension PlaceholderViewController: UITableViewDataSource, UITableViewDelegate 
 
         cell.loadingView.startAnimating()
         
-        vm.downloadPicture(thisPH){ (imData) in
+        vm.downloadThumbnail(thisPH){ (imData) in
             if let imData = imData{
                 let image = UIImage(data: imData)
                 DispatchQueue.main.async{
                     cell.thumbnailView.image = image
+                    cell.loadingView.stopAnimating()
+
                 }
-                cell.loadingView.stopAnimating()
             }
         }
-        
-        
-        
-
-        
+        imageName = vm.placeholders[indexPath.row].url
         return cell
+    }
+}
+
+extension PlaceholderViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView,
+                   didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "ImageViewController") as! ImageViewController
+        let thisPH = vm.placeholders[indexPath.row]
+        vm.downloadPicture(thisPH){ (imData) in
+            if let imData = imData{
+                let image = UIImage(data: imData)
+                vc.image = image
+            }
+        }
+        show(vc, sender: nil)
     }
 }

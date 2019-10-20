@@ -16,6 +16,7 @@
 		021010E0235CCBDD0011DEF3 /* PlaceholderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021010DF235CCBDD0011DEF3 /* PlaceholderModel.swift */; };
 		021010EC235CED720011DEF3 /* PlaceholderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021010EA235CED720011DEF3 /* PlaceholderTableViewCell.swift */; };
 		021010ED235CED720011DEF3 /* PlaceholderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 021010EB235CED720011DEF3 /* PlaceholderTableViewCell.xib */; };
+		021010EF235D04570011DEF3 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021010EE235D04570011DEF3 /* ImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		021010DF235CCBDD0011DEF3 /* PlaceholderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderModel.swift; sourceTree = "<group>"; };
 		021010EA235CED720011DEF3 /* PlaceholderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderTableViewCell.swift; sourceTree = "<group>"; };
 		021010EB235CED720011DEF3 /* PlaceholderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceholderTableViewCell.xib; sourceTree = "<group>"; };
+		021010EE235D04570011DEF3 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				021010CA235CC8E30011DEF3 /* PlaceholderViewController.swift */,
 				021010EA235CED720011DEF3 /* PlaceholderTableViewCell.swift */,
 				021010EB235CED720011DEF3 /* PlaceholderTableViewCell.xib */,
+				021010EE235D04570011DEF3 /* ImageViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -184,6 +187,7 @@
 				021010EC235CED720011DEF3 /* PlaceholderTableViewCell.swift in Sources */,
 				021010E0235CCBDD0011DEF3 /* PlaceholderModel.swift in Sources */,
 				021010C9235CC8E30011DEF3 /* AppDelegate.swift in Sources */,
+				021010EF235D04570011DEF3 /* ImageViewController.swift in Sources */,
 				021010DE235CCBCC0011DEF3 /* PlaceholderViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
