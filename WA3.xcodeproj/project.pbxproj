@@ -14,6 +14,8 @@
 		021010D3235CC8E40011DEF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 021010D1235CC8E40011DEF3 /* LaunchScreen.storyboard */; };
 		021010DE235CCBCC0011DEF3 /* PlaceholderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021010DD235CCBCC0011DEF3 /* PlaceholderViewModel.swift */; };
 		021010E0235CCBDD0011DEF3 /* PlaceholderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021010DF235CCBDD0011DEF3 /* PlaceholderModel.swift */; };
+		021010EC235CED720011DEF3 /* PlaceholderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 021010EA235CED720011DEF3 /* PlaceholderTableViewCell.swift */; };
+		021010ED235CED720011DEF3 /* PlaceholderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 021010EB235CED720011DEF3 /* PlaceholderTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		021010D4235CC8E40011DEF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		021010DD235CCBCC0011DEF3 /* PlaceholderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderViewModel.swift; sourceTree = "<group>"; };
 		021010DF235CCBDD0011DEF3 /* PlaceholderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderModel.swift; sourceTree = "<group>"; };
+		021010EA235CED720011DEF3 /* PlaceholderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderTableViewCell.swift; sourceTree = "<group>"; };
+		021010EB235CED720011DEF3 /* PlaceholderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlaceholderTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 		021010C7235CC8E30011DEF3 /* WA3 */ = {
 			isa = PBXGroup;
 			children = (
+				021010E1235CD8020011DEF3 /* Service */,
 				021010DC235CCABC0011DEF3 /* Model */,
 				021010DB235CCAB40011DEF3 /* ViewModel */,
 				021010DA235CCAA80011DEF3 /* View */,
@@ -74,6 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				021010CA235CC8E30011DEF3 /* PlaceholderViewController.swift */,
+				021010EA235CED720011DEF3 /* PlaceholderTableViewCell.swift */,
+				021010EB235CED720011DEF3 /* PlaceholderTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -92,6 +99,13 @@
 				021010DF235CCBDD0011DEF3 /* PlaceholderModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		021010E1235CD8020011DEF3 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +169,7 @@
 				021010D3235CC8E40011DEF3 /* LaunchScreen.storyboard in Resources */,
 				021010D0235CC8E40011DEF3 /* Assets.xcassets in Resources */,
 				021010CE235CC8E30011DEF3 /* Main.storyboard in Resources */,
+				021010ED235CED720011DEF3 /* PlaceholderTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				021010CB235CC8E30011DEF3 /* PlaceholderViewController.swift in Sources */,
+				021010EC235CED720011DEF3 /* PlaceholderTableViewCell.swift in Sources */,
 				021010E0235CCBDD0011DEF3 /* PlaceholderModel.swift in Sources */,
 				021010C9235CC8E30011DEF3 /* AppDelegate.swift in Sources */,
 				021010DE235CCBCC0011DEF3 /* PlaceholderViewModel.swift in Sources */,
