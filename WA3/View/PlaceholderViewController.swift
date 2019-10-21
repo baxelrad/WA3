@@ -35,7 +35,7 @@ class PlaceholderViewController: UIViewController {
     
     func randomColor(){
         var colorArr = [UIColor]()
-        for _ in 0..<100{
+        for _ in 0..<101{
             colorArr.append(UIColor(displayP3Red: CGFloat(Float(arc4random()) / Float(UINT32_MAX)), green: CGFloat(Float(arc4random()) / Float(UINT32_MAX)), blue: CGFloat(Float(arc4random()) / Float(UINT32_MAX)), alpha: 1))
         }
         colorArray = colorArr
